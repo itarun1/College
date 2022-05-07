@@ -2,12 +2,13 @@ const mongoose=require("mongoose")
 
 const topicSchema=new mongoose.Schema(
     {   
-        subject_id:{type:mongoose.Schema.Types.ObjectId,ref:"subject",required:true},
-        paper_type: {type:String,required:true},
-        paper_name: {type:String,required:true},
-        paper_code: {type:String,required:true},
+       
+        paper_id:{type:mongoose.Schema.Types.ObjectId,ref:"paper",required:true},
+        topic_name:{type:String,required:true},
+        topic_code:{type:String,required:true},
         college_id:{type:mongoose.Schema.Types.ObjectId,ref:"college",required:true},
         stream_id:{type:mongoose.Schema.Types.ObjectId,ref:"stream",required:true},
+        subject_id:{type:mongoose.Schema.Types.ObjectId,ref:"subject",required:true},
       
     },
     {

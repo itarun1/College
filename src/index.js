@@ -7,6 +7,7 @@ const college=require("./controller/College.controller")
 const stream=require("./controller/Stream.controller")
 const subject=require("./controller/Subject.controller")
 const paper=require("./controller/Paper.controller")
+const topic=require("./controller/Topic.controller")
    app.use(express.json())
    app.use(cors())
 
@@ -14,6 +15,7 @@ const paper=require("./controller/Paper.controller")
    app.use("/college",college)
    app.use("/stream",stream)
    app.use("/subject",subject)
+   app.use("/topic",topic)
 
 app.listen(2345,async()=>{
     try {
