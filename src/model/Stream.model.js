@@ -2,7 +2,7 @@ const mongoose=require("mongoose")
 
 const streamSchema=new mongoose.Schema(
     {
-        collegeid:{type:mongoose.Schema.Types.ObjectId,ref:"college",required:true},
+        college_id:{type:mongoose.Schema.Types.ObjectId,ref:"college",required:true},
         stream_name: {type:String,required:true}
     },
     {
